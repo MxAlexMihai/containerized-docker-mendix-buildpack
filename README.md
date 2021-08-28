@@ -15,7 +15,7 @@ $ docker build -t containerized-docker-mendix-buildpack .
 or use the already buildt bash script that runs the same command
 
 ```bash
-docker.build.containerized-docker-mendix-buildpack.sh
+$ ./docker.build.containerized-docker-mendix-buildpack.sh
 ```
 
 ## Using the containerized-docker-mendix-buildpack container ##
