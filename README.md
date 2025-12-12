@@ -32,7 +32,7 @@ $ docker run --rm -it \
 ```
 
 This will run the containerized-docker-mendix-buildpack container, attach to it 
-and present a command prompt where you can execute the commands require to build
+and present a command prompt where you can execute the commands required to build
 the Docker image for your project.
 
 ## Notes ##

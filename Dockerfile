@@ -15,11 +15,11 @@ RUN apk update \
 	docker-compose
 
 
-# ARG MXBUILDPACKTAG
+ARG MXBUILDPACKTAG=v6.0.1
 
-# RUN git clone --branch ${MXBUILDPACKTAG} core.autocrlf=false https://github.com/mendix/docker-mendix-buildpack /mendix-build-pack
+RUN git clone --branch ${MXBUILDPACKTAG} https://github.com/mendix/docker-mendix-buildpack.git /docker-mendix-buildpack
 # RUN git clone --single-branch --branch v3.1.1 https://github.com/mendix/docker-mendix-buildpack /docker-mendix-buildpack
-RUN git clone https://github.com/mendix/docker-mendix-buildpack /docker-mendix-buildpack
+# RUN git clone https://github.com/mendix/docker-mendix-buildpack /docker-mendix-buildpack
 
 VOLUME ["/docker-mendix-buildpack/project"]
 VOLUME ["/var/run/docker.sock"]
